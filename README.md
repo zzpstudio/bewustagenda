@@ -1,14 +1,14 @@
-bewustnetwerk
+BewustNetwerk
 ============
 
-##Bewust Netwerk for agenda event data export in xml/json.
+## Bewust Netwerk for agenda event data export in xml/json.
 
 Load the api class, setup configuration, filter the data and get the results in xml or json format.
 
-##Required
+## Required
 PHP 8.4+
 
-##Start a request
+## Start a request
 ```php
 <?php
 require 'bewustnetwerk/agenda.php';
@@ -26,14 +26,14 @@ echo $output;
 ?>
 ```
 
-##Available filters
+## Available filters
 Vraag alle events op vanaf vandaag:
 ```php
 $bn->set_filter('datum','all');
 ```
 Meer filters op verzoek.
 
-##Result in xml
+## Result in xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -59,7 +59,7 @@ Meer filters op verzoek.
 </events>
 ```
 
-##Result in json
+## Result in json
 
 ```json
 {"0":
