@@ -1,8 +1,8 @@
 <?php
 /**
- * Bewust Agenda: API > json / xml download agenda Bewust Nederland.
+ * Bewust Agenda: API > json / xml download agenda Bewust Netwerk.
  *
- * @copyright   Copyright (c) 2014, ZZPstudio <erwin@zzplab.nl>
+ * @copyright   Copyright (c) 2014, ZZPstudio <erwin@zzpstudio.nl>
  */
 namespace bewustagenda;
 class api {
@@ -45,8 +45,8 @@ class api {
   public function get_agenda()
   {
 		$api_time = time();
-		$api_hash = password_hash($this->config['api_key'].$this->config['api_id'].$this->config['api_key'].$this->config['domein'].$this->config['api_key'].$api_time, PASSWORD_DEFAULT);
-		$url = $this->config['api_url'].'/'.$this->config['api_id'].'/'.$this->config['domein'].'/'.$this->config['data_type'];
+		$api_hash = password_hash($this->config['api_key'].$this->config['api_id'].$this->config['api_key'].$this->config['user_id'].$this->config['api_key'].$api_time, PASSWORD_DEFAULT);
+		$url = $this->config['api_url'].'/'.$this->config['api_id'].'/'.$this->config['user_id'].'/'.$this->config['data_type'];
 		$params = [ 
 		  'api_time' => $api_time
 		, 'api_hash' => $api_hash
