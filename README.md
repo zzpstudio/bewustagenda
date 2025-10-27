@@ -11,7 +11,7 @@ PHP 8.4+
 ##Start a request
 ```php
 <?php
-require 'bewustagenda/api.php';
+require 'bewustnetwerk/events.php';
 $config = [
 'user_id'   => '',
 'api_id'    => '',
@@ -19,9 +19,9 @@ $config = [
 'data_type' => '',
 'api_url'   => '',
 ];
-$output = ( new bewustagenda\api($config) )
+$output = ( new bewustnetwerk\events($config) )
 ->set_filter('datum','all')
-->get_agenda();
+->getAgenda();
 echo $output;
 ?>
 ```
