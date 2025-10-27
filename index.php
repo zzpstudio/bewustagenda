@@ -1,10 +1,10 @@
 <?php
 /**
- * Bewust Agenda API > json / xml download agenda Bewust Netwerk.
+ * Bewust Netwerk events API > json / xml download agenda Bewust Netwerk.
  *
- * @copyright   Copyright (c) 2014, ZZPstudio <erwin@zzpstudio.nl>
+ * @copyright   Copyright (c) 2025, ZZPstudio <erwin@zzpstudio.nl>
  */
-require 'bewustagenda/api.php';
+require 'bewustnetwerk/events.php';
 
 $config = [
   'user_id'   => '',
@@ -14,8 +14,8 @@ $config = [
   'api_url'   => '',
 ];
 
-$output = ( new bewustagenda\api($config) )
+$output = ( new bewustnetwerk\events($config) )
 ->set_filter('datum','all')
-->get_agenda();
+->getAgenda();
 echo $output;
 ?>
