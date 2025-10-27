@@ -2,7 +2,7 @@
 /**
  * Bewust Netwerk events API > json / xml download agenda Bewust Netwerk.
  *
- * @copyright   Copyright (c) 2025, ZZPstudio <erwin@zzpstudio.nl>
+ * @copyright   Copyright (c) 2025, ZZPstudio
  */
 require 'bewustnetwerk/events.php';
 
