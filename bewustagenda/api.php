@@ -36,6 +36,7 @@ class api {
   public function set_filter($k, $v)
   {
 		  $this->filter[$k] = $v;
+	  return $this;
   }
   /**
    * Setup $url and $params for POST curl request.
