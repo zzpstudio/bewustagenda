@@ -1,7 +1,7 @@
 bewustagenda
 ============
 
-##API Bewust Nederland for data export in xml/json.
+##API Bewust Netwerk for data export in xml/json.
 
 Load the api class, setup configuration, filter the data and get the results in xml or json format.
 
@@ -19,9 +19,9 @@ $config = [
 'data_type' => '',
 'api_url'   => '',
 ];
-$bn = new bewustagenda\api($config);
-$bn->set_filter('datum','all');
-$output = $bn->get_agenda();
+$output = ( new bewustagenda\api($config) )
+->set_filter('datum','all')
+->get_agenda();
 echo $output;
 ?>
 ```
