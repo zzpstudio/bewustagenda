@@ -1,4 +1,4 @@
-bewustagenda
+bewustnetwerk
 ============
 
 ##API Bewust Netwerk for data export in xml/json.
