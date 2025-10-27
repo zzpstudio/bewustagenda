@@ -37,7 +37,7 @@ class agenda {
    */
   public function set_filter($k, $v)
   {
-		$this->filter[$k] = $v;
+	  $this->filter[$k] = $v;
 	  return $this;
   }
   /**
