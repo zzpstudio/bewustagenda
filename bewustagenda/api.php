@@ -2,7 +2,7 @@
 /**
  * Bewust Agenda: API > json / xml download agenda Bewust Netwerk.
  *
- * @copyright   Copyright (c) 2014, ZZPstudio <erwin@zzpstudio.nl>
+ * @copyright   Copyright (c) 2014, ZZPstudio
  */
 namespace bewustagenda;
 class api {
