@@ -4,7 +4,7 @@
  *
  * @copyright   Copyright (c) 2025, ZZPstudio
  */
-require 'bewustnetwerk/events.php';
+require 'bewustnetwerk/agenda.php';
 
 $config = [
   'user_id'   => '',
@@ -14,8 +14,8 @@ $config = [
   'api_url'   => '',
 ];
 
-$output = ( new bewustnetwerk\events($config) )
+$output = ( new bewustnetwerk\agenda($config) )
 ->set_filter('datum','all')
-->getAgenda();
+->get_agenda();
 echo $output;
 ?>
