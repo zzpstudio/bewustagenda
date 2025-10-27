@@ -13,11 +13,11 @@ PHP 8.4+
 <?php
 require 'bewustagenda/api.php';
 $config = [
-'domein'   => ''
-,'api_id'   => ''
-,'api_key'  => ''
-,'data_type' => ''
-,'api_url'  => ''
+'user_id'   => '',
+'api_id'    => '',
+'api_key'   => '',
+'data_type' => '',
+'api_url'   => '',
 ];
 $bn = new bewustagenda\api($config);
 $bn->set_filter('datum','all');
